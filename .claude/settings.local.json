@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(g++ --version)",
+      "Bash(g++:*)",
+      "Bash(./myhex:*)",
+      "Bash(pacman -Ss ncurses)",
+      "Bash(where pacman:*)",
+      "Bash(pacman -Q mingw-w64-x86_64-ncurses)",
+      "Read(//mingw64/**)",
+      "Read(//usr/**)",
+      "Bash(./myhex_dbg --dump --length 32 --color myhex.exe)",
+      "Bash(./myhex_o1 --dump --length 32 --color myhex.exe)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(./myhex_dbg --dump --length 32 myhex.exe)",
+      "Bash(./myhex_o2 --dump --length 32 myhex.exe)",
+      "Bash(./myhex_o2 --dump --length 32 --color myhex.exe)",
+      "Bash(./myhex_noinline --dump --length 32 myhex.exe)",
+      "Bash(./myhex_test --dump --length 32 myhex.exe)",
+      "Bash(echo \"compile exit: $?\")",
+      "Bash(./myhex_ub --dump --length 48 myhex.exe)",
+      "Bash(/tmp/test_noviewer --dump --length 48 myhex.exe)",
+      "Bash(/tmp/test_dumpo0 --dump --length 48 myhex.exe)",
+      "Bash(/tmp/test_o1 --dump --length 48 myhex.exe)",
+      "Bash(/tmp/t3 --dump --length 16 myhex.exe)",
+      "Bash(/tmp/t4 --dump --length 16 myhex.exe)"
+    ]
+  }
+}
