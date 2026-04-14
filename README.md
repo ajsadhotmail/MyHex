@@ -1,8 +1,6 @@
 # MyHex
 
-轻量级跨平台命令行十六进制文件查看器，支持 TUI 交互浏览与 ANSI 彩色高亮。
-
-**无外部依赖**：Windows 使用 `_getch` + Console API，POSIX 使用 `termios` + `select`，渲染统一采用 ANSI 转义码。
+轻量级跨平台命令行十六进制文件查看器，支持 TUI 与 ANSI 彩色高亮。
 
 ## 功能
 
@@ -16,7 +14,7 @@
 
 | 平台 | 终端输入 | 终端尺寸 | ANSI 颜色 |
 |---|---|---|---|
-| Windows 10+ | `_getch()` + Console API | `GetConsoleScreenBufferInfo` | 自动启用虚拟终端 |
+| Windows 10+ | `_getch()` + Console API | `GetConsoleScreenBufferInfo` | 虚拟终端 |
 | Linux / macOS | `termios` raw mode + `select()` | `ioctl(TIOCGWINSZ)` | 原生支持 |
 
 若需使用 ncurses，编译时加 `-DUSE_NCURSES` 并链接 `-lncurses`（需另行适配）。
